@@ -9,10 +9,14 @@ import { BlogpostRecentComponent } from './blogpost-recent/blogpost-recent.compo
 import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
-  declarations: [BlogpostFeaturedComponent, BlogpostListComponent, BlogpostDetailComponent, BlogpostRecentComponent, CategoriesComponent],
-  imports: [
-    CommonModule,
-    BlogpostRoutingModule
-  ]
+  declarations: [
+    BlogpostFeaturedComponent,
+    BlogpostListComponent,
+    BlogpostDetailComponent,
+    BlogpostRecentComponent,
+    CategoriesComponent
+  ],
+  imports: [CommonModule, BlogpostRoutingModule],
+  exports: [BlogpostFeaturedComponent]
 })
-export class BlogpostModule { }
+export class BlogpostModule {}
